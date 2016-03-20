@@ -8,6 +8,16 @@ import java.util.ArrayList;
  *
  */
 public class CloneClass {
+	private int id;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public CloneClass() {
 		this.clones = new ArrayList<Clone>();
 	}

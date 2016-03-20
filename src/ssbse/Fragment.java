@@ -91,7 +91,7 @@ public class Fragment {
 	}
 
 	public String getFile() {
-		return file;
+		return file.trim();
 	}
 
 	public void setFile(String file) {

@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -39,7 +41,7 @@ public class AgreedLOCMain {
 	/***
 	 * An array list to store list of all files and their line counts.
 	 */
-	private static HashMap<String, FragmentList> cloneFragmentHash = new HashMap<String, FragmentList>();
+	private static HashMap<String, FragmentPairList> fragHash = new HashMap<String, FragmentPairList>();
 	private static Logger log;
 	// create the Options
 	private static Options options = new Options();
@@ -80,7 +82,8 @@ public class AgreedLOCMain {
 			log.debug("Processing " + file.getName());
 			try {
 				GCF gcf = readGCF(file);
-				calSumAgreedClonedLines(gcf);
+				processCloneFragment(gcf);
+				printFragmentHash();
 			} catch (ParserConfigurationException e) {
 				e.printStackTrace();
 			} catch (SAXException e) {
@@ -93,20 +96,103 @@ public class AgreedLOCMain {
 	
 	/***
 	 * Calculate agreed LOC
-	 * @param GCF document
+	 * @param gcf GCF document
 	 */
-	private static int calSumAgreedClonedLines(GCF gcf) {
-		int sum = 0;
+	private static void calSumAgreedClonedLines(GCF gcf) {
+	}
+	
+	/***
+	 * Add all the clone pairs to a hash map
+	 * @param gcf GCF document
+	 */
+	private static void processCloneFragment(GCF gcf) {
 		for (CloneClass cloneClass : gcf.getCloneClasses()) {
 			String pair = "";
-			for (Clone clone: cloneClass.getClones()) {
-				for (Fragment frag: clone.getFragmentList()) {
-					pair += frag.getFile() + ":";
+			String out = "";
+			// only pair of clones
+			if (cloneClass.getClones().size() == 2) {
+				Fragment frag1 = cloneClass.getClones().get(0).getFragmentList().get(0);
+				Fragment frag2 = cloneClass.getClones().get(1).getFragmentList().get(0);
+				out += frag1.getFile() + ":" + frag1.getStartLine() + ":" + frag1.getEndLine() + "|";
+				out += frag2.getFile() + ":" + frag2.getStartLine() + ":" + frag2.getEndLine();
+				pair += frag1.getFile() + ":" + frag2.getFile();
+
+				// log.debug(pair);
+				// add to the fragment hash
+				addToFragmentHash(pair, frag1, frag2);
+			} else if (cloneClass.getClones().size() > 2) {
+				// log.debug("clone id = " + cloneClass);
+				// log.debug("clone size = " + cloneClass.getClones().size());
+				// more than a pair
+				for (int i=0; i < cloneClass.getClones().size(); i++) {
+					for (int j=i; j < cloneClass.getClones().size(); j++) {
+						Clone clone1 = cloneClass.getClones().get(i);
+						Clone clone2 = cloneClass.getClones().get(j);
+						pair = "";
+						out = "";
+						Fragment frag1 = clone1.getFragmentList().get(0);
+						Fragment frag2 = clone2.getFragmentList().get(0);
+						// check if not the same pair, just reverse
+						if (frag1.getFile().equals(frag2.getFile()) 
+								&& frag1.getStartLine() == frag2.getStartLine()
+								&& frag1.getEndLine() == frag2.getEndLine()) {
+							continue;
+						}
+						else {
+							// TODO: this assumes that each clone has only 1 fragment.
+							// Should be fixed in the future to be safer.
+							out += frag1.getFile() + ":" + frag1.getStartLine() + ":" + frag1.getEndLine() + "|";
+							out += frag2.getFile() + ":" + frag2.getStartLine() + ":" + frag2.getEndLine();
+							pair += frag1.getFile() + ":" + frag2.getFile();
+						}
+						// log.debug(out);
+						// add to the fragment hash
+						addToFragmentHash(pair, frag1, frag2);
+					}
 				}
+				// log.debug("\n");
+			} else {
+				log.error("No clone pair found");
 			}
-			log.debug(pair);
 		}
-		return sum;
+	}
+	
+	/***
+	 * Add the two given fragments to the fragment list if they do not exist. 
+	 * If they do, update the agreed lines
+	 * @param pair the key composed of two file names
+	 * @param frag1 the 1st fragment
+	 * @param frag2 the 2nd fragment
+	 */
+	public static void addToFragmentHash(String pair, Fragment frag1, Fragment frag2) {
+		if (fragHash.get(pair) == null) {
+			FragmentPairList list = new FragmentPairList();
+			list.addFragmentPair(new FragmentPair(frag1, frag2));
+			fragHash.put(pair, list);
+		} else {
+			FragmentPairList list = fragHash.get(pair);
+			// if found in range, update the value of agreed lines
+			if (list.isInListAndUpdate(new FragmentPair(frag1, frag2))) {
+			} else {
+				// if not found, just add them.
+				list.addFragmentPair(new FragmentPair(frag1, frag2));
+			}
+		}
+	}
+	
+	public static void printFragmentHash() {
+		log.debug("=============== FragHash ==============");
+		Iterator it = fragHash.entrySet().iterator();
+	    while (it.hasNext()) {
+	        Map.Entry pair = (Map.Entry)it.next();
+	        log.debug(pair.getKey());
+	        FragmentPairList fpList = (FragmentPairList) pair.getValue();
+	        for (int i=0; i<fpList.size(); i++) {
+	        	log.debug(fpList.toString());
+	        }
+	        // System.out.println(pair.getKey() + " = " + pair.getValue());
+	    }
+		log.debug("=============== FragHash ==============");
 	}
 
 	/***
@@ -128,43 +214,43 @@ public class AgreedLOCMain {
 		Document doc = dBuilder.parse(f);
 		doc.getDocumentElement().normalize();
 
-		log.debug("Root element :"
-				+ doc.getDocumentElement().getNodeName());
+		// log.debug("Root element :"
+		//		+ doc.getDocumentElement().getNodeName());
 
 		NodeList nList = doc.getElementsByTagName("CloneClass");
-		log.debug("Number of clone classes = " + nList.getLength());
+		// log.debug("Number of clone classes = " + nList.getLength());
 		// loop through all clone classes (skip the first child which is the ID)
 		for (int i = 0; i < nList.getLength(); i++) {
 			CloneClass cc = new CloneClass();
 			Node n = nList.item(i);
 			NodeList clones = n.getChildNodes();
-			log.debug(i + ": Node name = " + n.getNodeName() + ", child nodes = " + clones.getLength());
+//			log.debug(i + ": Node name = " + n.getNodeName() + ", child nodes = " + clones.getLength());
 			// loop through all clones
 			for (int j = 0; j < clones.getLength(); j++) {
 				Clone c = new Clone();
 				Node clone = clones.item(j);
-
+				
 				// Add only the real clones, skip ID
 				if (!clone.getNodeName().toString().equals("#text")
 						&& !clone.getNodeName().toString().equals("ID")) {
 					NodeList fragments = clone.getChildNodes();
-					log.debug("> " + j + ": Node name = " + clone.getNodeName() + ", childs = " + fragments.getLength());
+//					log.debug("> " + j + ": Node name = " + clone.getNodeName() + ", childs = " + fragments.getLength());
 					// loop through all fragments
 					for (int k = 0; k < fragments.getLength(); k++) {
 						Fragment frag = new Fragment();
 						Node fNode = fragments.item(k);
 						if (!fNode.getNodeName().toString().equals("#text")) {
-							log.debug(
-									">> Node name = " + fNode.getNodeName());
+//							log.debug(
+//									">> Node name = " + fNode.getNodeName());
 							NodeList fChildNodes = fNode.getChildNodes();
 							int vindex = 0;
 							for (int l = 0; l < fChildNodes.getLength(); l++) {
 								Node fragNode = fChildNodes.item(l);
 								if (!fragNode.getNodeName().toString()
 										.equals("#text")) {
-									log.debug("      >> Node name = "
-											+ fragNode.getNodeName() + ", value = "
-													+ fragNode.getTextContent());
+//									log.debug("      >> Node name = "
+//											+ fragNode.getNodeName() + ", value = "
+//													+ fragNode.getTextContent());
 
 									if (vindex == 0) // file
 										frag.setFile(fragNode.getTextContent());
