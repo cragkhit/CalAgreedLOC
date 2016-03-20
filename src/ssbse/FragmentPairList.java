@@ -53,4 +53,13 @@ public class FragmentPairList {
 		}
 		return s;
 	}
+
+	public String toString(int agreedToolLimit) {
+		String s = "";
+		for (FragmentPair fragPair : fpList) {
+			if (fragPair.getAgreedTools() >= agreedToolLimit)
+				s += "\t" + fragPair.toString() + "\n";
+		}
+		return s;
+	}
 }

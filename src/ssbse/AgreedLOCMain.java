@@ -2,7 +2,6 @@ package ssbse;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -43,6 +42,7 @@ public class AgreedLOCMain {
 	 */
 	private static HashMap<String, FragmentPairList> fragHash = new HashMap<String, FragmentPairList>();
 	private static Logger log;
+	private static int agreedToolLimit = 2;
 	// create the Options
 	private static Options options = new Options();
 	private static String inputDir = "";
@@ -61,7 +61,7 @@ public class AgreedLOCMain {
 		String logFile = inputDir + ".log";
 		try {
 			appender = new RollingFileAppender(layout, logFile, false);
-			// appender.setMaxFileSize("100MB");
+			appender.setMaxFileSize("10MB");
 			log.addAppender(appender);
 		} catch (IOException e1) {
 			// e1.printStackTrace();
@@ -79,11 +79,20 @@ public class AgreedLOCMain {
 		@SuppressWarnings("unchecked")
 		List<File> listOfFiles = (List<File>) FileUtils.listFiles(folder, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
 		for (File file : listOfFiles) {
+			// System.out.println("Processing " + file.getName());
 			log.debug("Processing " + file.getName());
 			try {
 				GCF gcf = readGCF(file);
-				processCloneFragment(gcf);
-				printFragmentHash();
+				int toolIndex = -1;
+				if (file.getName().toLowerCase().trim().contains("ccfx"))
+					toolIndex = Utilities.CCFX_INDEX;
+				else if (file.getName().toLowerCase().trim().contains("simian"))
+					toolIndex = Utilities.SIMIAN_INDEX;
+				else if (file.getName().toLowerCase().trim().contains("nicad"))
+					toolIndex = Utilities.NICAD_INDEX;
+				else if (file.getName().toLowerCase().trim().contains("deckard"))
+					toolIndex = Utilities.DECKARD_INDEX;
+				processCloneFragment(gcf, toolIndex);
 			} catch (ParserConfigurationException e) {
 				e.printStackTrace();
 			} catch (SAXException e) {
@@ -92,21 +101,54 @@ public class AgreedLOCMain {
 				e.printStackTrace();
 			}
 		}
+
+		calculateAgreedLOCs(calSumAgreedClonedLines(Utilities.NUMBER_OF_TOOLS));
+		log.debug(printFragmentHash(agreedToolLimit));
+	}
+	
+	private static void calculateAgreedLOCs(int[] arr) {
+		long realLocs = 0;
+		long idealLocs = 0;
+		for (int i=0; i<arr.length; i++) {
+			System.out.println("Agreed at least " + (i+1) + " tools: " + arr[i] + " lines");
+			realLocs += (i+1) * arr[i];
+			idealLocs += Utilities.NUMBER_OF_TOOLS * arr[i];
+		}
+		double fitness = ((double) realLocs)/idealLocs;
+		System.out.println("Fitness = " + fitness);
 	}
 	
 	/***
 	 * Calculate agreed LOC
 	 * @param gcf GCF document
 	 */
-	private static void calSumAgreedClonedLines(GCF gcf) {
+	private static int[] calSumAgreedClonedLines(int numTools) {
+		int[] countLoc = new int[numTools];
+		Iterator it = fragHash.entrySet().iterator();
+	    while (it.hasNext()) {
+	        Map.Entry<String, FragmentPairList> pair = (Map.Entry)it.next();
+	        FragmentPairList fpList = (FragmentPairList) pair.getValue();
+	        for (int i=0; i<fpList.size(); i++) {
+	        	FragmentPair fp = fpList.get(i);
+	        	int agreedLines = fp.getAgreedLines();
+	        	int maxAgreedTools = fp.getAgreedTools();
+	        	// fill in the agreed LOC according to #agreedTools
+	        	for (int j=0; j<maxAgreedTools; j++) {
+	        		countLoc[j] += agreedLines;
+	        	}
+	        }
+	    }
+	    return countLoc;
 	}
 	
 	/***
 	 * Add all the clone pairs to a hash map
 	 * @param gcf GCF document
 	 */
-	private static void processCloneFragment(GCF gcf) {
+	private static void processCloneFragment(GCF gcf, int toolIndex) {
+		int count=0;
 		for (CloneClass cloneClass : gcf.getCloneClasses()) {
+			
 			String pair = "";
 			String out = "";
 			// only pair of clones
@@ -119,7 +161,11 @@ public class AgreedLOCMain {
 
 				// log.debug(pair);
 				// add to the fragment hash
-				addToFragmentHash(pair, frag1, frag2);
+				addToFragmentHash(pair, frag1, frag2, toolIndex);
+//				System.out.println("add to hash (2) = (" + frag1.getStartLine() + "," 
+//				+ frag1.getEndLine() + ") : (" + frag2.getStartLine() + "," + frag2.getEndLine() + ")");
+//				count++;
+//				System.out.println(printFragmentHash());
 			} else if (cloneClass.getClones().size() > 2) {
 				// log.debug("clone id = " + cloneClass);
 				// log.debug("clone size = " + cloneClass.getClones().size());
@@ -147,7 +193,11 @@ public class AgreedLOCMain {
 						}
 						// log.debug(out);
 						// add to the fragment hash
-						addToFragmentHash(pair, frag1, frag2);
+						addToFragmentHash(pair, frag1, frag2, toolIndex);
+//						System.out.println("add to hash (>2) = (" + frag1.getStartLine() + "," 
+//						+ frag1.getEndLine() + ") : (" + frag2.getStartLine() + "," + frag2.getEndLine() + ")");
+//						count++;
+//						System.out.println(printFragmentHash());
 					}
 				}
 				// log.debug("\n");
@@ -164,35 +214,42 @@ public class AgreedLOCMain {
 	 * @param frag1 the 1st fragment
 	 * @param frag2 the 2nd fragment
 	 */
-	public static void addToFragmentHash(String pair, Fragment frag1, Fragment frag2) {
+	public static void addToFragmentHash(String pair, Fragment frag1, Fragment frag2, int toolIndex) {
 		if (fragHash.get(pair) == null) {
+			// System.out.println("adding a fresh new one");
 			FragmentPairList list = new FragmentPairList();
-			list.addFragmentPair(new FragmentPair(frag1, frag2));
+			list.addFragmentPair(new FragmentPair(frag1, frag2, toolIndex));
 			fragHash.put(pair, list);
 		} else {
+			// System.out.println("Oh! already exists");
 			FragmentPairList list = fragHash.get(pair);
 			// if found in range, update the value of agreed lines
-			if (list.isInListAndUpdate(new FragmentPair(frag1, frag2))) {
+			if (list.isInListAndUpdate(new FragmentPair(frag1, frag2, toolIndex))) {
+				// System.out.println("It's in the range. So I updated it.");
+				return;
 			} else {
 				// if not found, just add them.
-				list.addFragmentPair(new FragmentPair(frag1, frag2));
+				// System.out.println("But not this range, just add it.");
+				list.addFragmentPair(new FragmentPair(frag1, frag2, toolIndex));
 			}
 		}
 	}
 	
-	public static void printFragmentHash() {
-		log.debug("=============== FragHash ==============");
+	public static String printFragmentHash(int agreedToolLimit) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("=============== Clone Fragments ==============\n");
 		Iterator it = fragHash.entrySet().iterator();
 	    while (it.hasNext()) {
 	        Map.Entry pair = (Map.Entry)it.next();
-	        log.debug(pair.getKey());
+	        // sb.append("key: " + pair.getKey() + "\n");
 	        FragmentPairList fpList = (FragmentPairList) pair.getValue();
-	        for (int i=0; i<fpList.size(); i++) {
-	        	log.debug(fpList.toString());
-	        }
+	        // sb.append("value:");
+	        sb.append(fpList.toString(agreedToolLimit));
 	        // System.out.println(pair.getKey() + " = " + pair.getValue());
 	    }
-		log.debug("=============== FragHash ==============");
+	    sb.append("=============== Clone Fragments ==============\n");
+	    
+	    return sb.toString();
 	}
 
 	/***
