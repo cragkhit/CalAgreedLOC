@@ -64,7 +64,6 @@ public class AgreedLOCMain {
 			appender.setMaxFileSize("10MB");
 			log.addAppender(appender);
 		} catch (IOException e1) {
-			// e1.printStackTrace();
 			// If cannot use the log file output, show it on screen.
 			BasicConfigurator.configure();
 		}
@@ -77,7 +76,8 @@ public class AgreedLOCMain {
 		log.debug("inputDir = " + inputDir);
 		File folder = new File(inputDir);
 		@SuppressWarnings("unchecked")
-		List<File> listOfFiles = (List<File>) FileUtils.listFiles(folder, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
+		List<File> listOfFiles = 
+			(List<File>) FileUtils.listFiles(folder, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
 		for (File file : listOfFiles) {
 			// System.out.println("Processing " + file.getName());
 			log.debug("Processing " + file.getName());
@@ -106,6 +106,11 @@ public class AgreedLOCMain {
 		log.debug(printFragmentHash(agreedToolLimit));
 	}
 	
+	// TODO: double-check for correctness
+	/***
+	 * Calculate fitness value of agreed LOCs
+	 * @param arr array of agreed LOCs according to the number of tools
+	 */
 	private static void calculateAgreedLOCs(int[] arr) {
 		long realLocs = 0;
 		long idealLocs = 0;
@@ -200,7 +205,6 @@ public class AgreedLOCMain {
 //						System.out.println(printFragmentHash());
 					}
 				}
-				// log.debug("\n");
 			} else {
 				log.error("No clone pair found");
 			}
@@ -235,6 +239,11 @@ public class AgreedLOCMain {
 		}
 	}
 	
+	/***
+	 * Print out the hash map of fragments
+	 * @param agreedToolLimit number of minimum agreed tools to print
+	 * @return String of all fragments which have been reported by at least >= agreedToolLimit
+	 */
 	public static String printFragmentHash(int agreedToolLimit) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("=============== Clone Fragments ==============\n");
