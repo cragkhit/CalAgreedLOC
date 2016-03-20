@@ -115,12 +115,12 @@ public class AgreedLOCMain {
 		long realLocs = 0;
 		long idealLocs = 0;
 		for (int i=0; i<arr.length; i++) {
-			System.out.println("Agreed at least " + (i+1) + " tools: " + arr[i] + " lines");
+			System.out.println("Agreed " + (i+1) + " tools: " + arr[i] + " LOCs");
 			realLocs += (i+1) * arr[i];
 			idealLocs += Utilities.NUMBER_OF_TOOLS * arr[i];
 		}
 		double fitness = ((double) realLocs)/idealLocs;
-		System.out.println("Fitness = " + fitness);
+		System.out.println("Fitness: " + fitness);
 	}
 	
 	/***
@@ -386,7 +386,7 @@ public class AgreedLOCMain {
 	
 	private static void showHelp() {
 		HelpFormatter formater = new HelpFormatter();
-		formater.printHelp("AgreedLOC", options);
+		formater.printHelp("java -jar target/calAgreedLOC.jar -i <input dir>", options);
 		System.exit(0);
 	}
 }
