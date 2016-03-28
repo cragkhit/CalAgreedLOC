@@ -58,7 +58,7 @@ public class AgreedLOCMain {
 		SimpleLayout layout = new SimpleLayout();
 		RollingFileAppender appender;
 
-		String logFile = inputDir + ".log";
+		String logFile = inputDir + ".txt";
 		try {
 			appender = new RollingFileAppender(layout, logFile, false);
 			appender.setMaxFileSize("10MB");
@@ -115,12 +115,13 @@ public class AgreedLOCMain {
 		long realLocs = 0;
 		long idealLocs = 0;
 		for (int i=0; i<arr.length; i++) {
-			System.out.println("Agreed " + (i+1) + " tools: " + arr[i] + " LOCs");
+			log.debug("Agreed " + (i+1) + " tools: " + arr[i] + " LOCs");
 			realLocs += (i+1) * arr[i];
 			idealLocs += Utilities.NUMBER_OF_TOOLS * arr[i];
 		}
 		double fitness = ((double) realLocs)/idealLocs;
-		System.out.println("Fitness: " + fitness);
+		log.debug("Fitness: " + fitness);
+		System.out.println(fitness);
 	}
 	
 	/***

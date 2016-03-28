@@ -114,7 +114,13 @@ public class FragmentPair {
 	}
 	
 	public int getAgreedLines() {
-		return f1.getEndLine() - f1.getStartLine() + 1;
+		int first = f1.getEndLine() - f1.getStartLine() + 1;
+		int second = f2.getEndLine() - f2.getStartLine() + 1;
+		// return the maximum one
+		if (first > second)
+			return first;
+		else 
+			return second;
 	}
 	
 	public int[] getReportedTools() {
