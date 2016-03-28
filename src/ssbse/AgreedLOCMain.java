@@ -387,7 +387,7 @@ public class AgreedLOCMain {
 	
 	private static void showHelp() {
 		HelpFormatter formater = new HelpFormatter();
-		formater.printHelp("java -jar target/calAgreedLOC.jar -i <input dir>", options);
+		formater.printHelp("calAgreeLoc (v.0.1)\njava -jar target/calAgreedLOC.jar -i <input dir>", options);
 		System.exit(0);
 	}
 }
