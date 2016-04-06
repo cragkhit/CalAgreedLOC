@@ -1,7 +1,10 @@
 package ssbse;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -42,18 +45,26 @@ public class AgreedLOCMain {
 	 * An array list to store list of all files and their line counts.
 	 */
 	private static HashMap<String, FragmentPairList> fragHash = new HashMap<String, FragmentPairList>();
+	private static CloneList cloneFileList = new CloneList();
+	
 	private static Logger log;
 	private static int agreedToolLimit = 2;
 	// create the Options
 	private static Options options = new Options();
 	private static String inputDir = "";
+	private static String systemDir = "";
+	private static String prefix = "";
 
 	public static void main(String[] args) {
 		// process the command line arguments
 		processCommandLine(args);
 		
-		// BasicConfigurator.configure();
-		// PropertyConfigurator.configure(logProperties);
+		try {
+			generateCloneFileList(systemDir, "java");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		log = Logger.getLogger(AgreedLOCMain.class);
 		// setting up a FileAppender dynamically...
 		SimpleLayout layout = new SimpleLayout();
@@ -131,20 +142,26 @@ public class AgreedLOCMain {
 	 */
 	private static int[] calSumAgreedClonedLines(int numTools) {
 		int[] countLoc = new int[numTools];
-		Iterator it = fragHash.entrySet().iterator();
-	    while (it.hasNext()) {
-	        Map.Entry<String, FragmentPairList> pair = (Map.Entry)it.next();
-	        FragmentPairList fpList = (FragmentPairList) pair.getValue();
-	        for (int i=0; i<fpList.size(); i++) {
-	        	FragmentPair fp = fpList.get(i);
-	        	int agreedLines = fp.getAgreedLines();
-	        	int maxAgreedTools = fp.getAgreedTools();
-	        	// fill in the agreed LOC according to #agreedTools
-	        	for (int j=0; j<maxAgreedTools; j++) {
-	        		countLoc[j] += agreedLines;
-	        	}
-	        }
+//		Iterator it = fragHash.entrySet().iterator();
+//	    while (it.hasNext()) {
+//	        Map.Entry<String, FragmentPairList> pair = (Map.Entry)it.next();
+//	        FragmentPairList fpList = (FragmentPairList) pair.getValue();
+//	        for (int i=0; i<fpList.size(); i++) {
+//	        	FragmentPair fp = fpList.get(i);
+//	        	int agreedLines = fp.getAgreedLines();
+//	        	int maxAgreedTools = fp.getAgreedTools();
+//	        	// fill in the agreed LOC according to #agreedTools
+//	        	for (int j=0; j<maxAgreedTools; j++) {
+//	        		countLoc[j] += agreedLines;
+//	        	}
+//	        }
+//	    }
+	    
+	    ArrayList<CloneFile> clist = cloneFileList.getCloneFileList();
+	    for (CloneFile c : clist) {
+	    		System.out.println(c.getName() + ": " + c.print());
 	    }
+	    
 	    return countLoc;
 	}
 	
@@ -153,13 +170,14 @@ public class AgreedLOCMain {
 	 * @param gcf GCF document
 	 */
 	private static void processCloneFragment(GCF gcf, int toolIndex) {
-		int count=0;
 		for (CloneClass cloneClass : gcf.getCloneClasses()) {
-			
-			String pair = "";
-			String out = "";
-			// only pair of clones
-			
+			ArrayList<Clone> clones = cloneClass.getClones();
+			for (Clone c: clones) {
+				ArrayList<Fragment> fragList = c.getFragmentList();
+				for (Fragment f: fragList) {
+					cloneFileList.addCloneLineToList(f.getFile(), f.getStartLine(), f.getEndLine(), toolIndex);
+				}
+			}
 		}
 	}
 	
@@ -312,11 +330,61 @@ public class AgreedLOCMain {
 		return f;
 	}
 	
+	private static void generateCloneFileList(String directory, String extension) throws IOException {
+		File folder = new File(directory);
+		String[] extensions = new String[] { extension };
+		List<File> files = (List<File>) FileUtils.listFiles(folder, extensions, true);
+		int count = 0;
+		for (File file : files) {
+			count++;
+			int loc = countLines(file.getCanonicalPath());
+			String filename;
+			if (!prefix.equals("")) {
+				// add '/' at the end if it isn't there.
+				if (!prefix.endsWith("/"))
+					prefix += "/";
+				filename = file.getCanonicalPath().replace(prefix, "");
+			}
+			else
+				filename = file.getCanonicalPath();
+			
+			System.out.println(count + ", file: " + filename + ", size: " + loc);
+			cloneFileList.addCloneFile(filename, loc);
+			
+		}
+	}
+	
+	public static int countLines(String filename) throws IOException {
+	    InputStream is = new BufferedInputStream(new FileInputStream(filename));
+	    try {
+	        byte[] c = new byte[1024];
+	        int count = 0;
+	        int readChars = 0;
+	        boolean empty = true;
+	        while ((readChars = is.read(c)) != -1) {
+	            empty = false;
+	            for (int i = 0; i < readChars; ++i) {
+	                if (c[i] == '\n') {
+	                    ++count;
+	                }
+	            }
+	        }
+	        // add one more, just to be sure we have enough line in case 
+	        // we don't have newline at the last line
+	        count++;
+	        return (count == 0 && !empty) ? 1 : count;
+	    } finally {
+	        is.close();
+	    }
+	}
+	
 	private static void processCommandLine(String[] args) {
 		// create the command line parser
 		CommandLineParser parser = new BasicParser();
 
 		options.addOption("i", "input", true, "Directory containing all GCF files");
+		options.addOption("s", "system", true, "Directory containing the system");
+		options.addOption("p", "prefix", true, "Unwanted prefix path to be removed (optional)");
 		options.addOption("h", "help", false, "Display help message.");
 
 		try {
@@ -326,6 +394,15 @@ public class AgreedLOCMain {
 			if (line.hasOption("i")) {
 				inputDir = line.getOptionValue("i");
 			} else { throw new ParseException("No GCF directory provided."); }
+			
+			if (line.hasOption("s")) {
+				systemDir = line.getOptionValue("s");
+			} else { throw new ParseException("No directory of the system provided."); }
+			
+			if (line.hasOption("p")) {
+				prefix = line.getOptionValue("p");
+				System.out.println("Prefix = " + prefix);
+			}
 			
 			if (line.hasOption("h")) {
 				showHelp();
