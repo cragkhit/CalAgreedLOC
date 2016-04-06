@@ -2,6 +2,7 @@ package ssbse;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -37,7 +38,7 @@ import org.xml.sax.SAXException;
  * @since 2016-03-20
  */
 public class AgreedLOCMain {
-	/***
+	/*
 	 * An array list to store list of all files and their line counts.
 	 */
 	private static HashMap<String, FragmentPairList> fragHash = new HashMap<String, FragmentPairList>();
@@ -158,57 +159,7 @@ public class AgreedLOCMain {
 			String pair = "";
 			String out = "";
 			// only pair of clones
-			if (cloneClass.getClones().size() == 2) {
-				Fragment frag1 = cloneClass.getClones().get(0).getFragmentList().get(0);
-				Fragment frag2 = cloneClass.getClones().get(1).getFragmentList().get(0);
-				out += frag1.getFile() + ":" + frag1.getStartLine() + ":" + frag1.getEndLine() + "|";
-				out += frag2.getFile() + ":" + frag2.getStartLine() + ":" + frag2.getEndLine();
-				pair += frag1.getFile() + ":" + frag2.getFile();
-
-				// log.debug(pair);
-				// add to the fragment hash
-				addToFragmentHash(pair, frag1, frag2, toolIndex);
-//				System.out.println("add to hash (2) = (" + frag1.getStartLine() + "," 
-//				+ frag1.getEndLine() + ") : (" + frag2.getStartLine() + "," + frag2.getEndLine() + ")");
-//				count++;
-//				System.out.println(printFragmentHash());
-			} else if (cloneClass.getClones().size() > 2) {
-				// log.debug("clone id = " + cloneClass);
-				// log.debug("clone size = " + cloneClass.getClones().size());
-				// more than a pair
-				for (int i=0; i < cloneClass.getClones().size(); i++) {
-					for (int j=i; j < cloneClass.getClones().size(); j++) {
-						Clone clone1 = cloneClass.getClones().get(i);
-						Clone clone2 = cloneClass.getClones().get(j);
-						pair = "";
-						out = "";
-						Fragment frag1 = clone1.getFragmentList().get(0);
-						Fragment frag2 = clone2.getFragmentList().get(0);
-						// check if not the same pair, just reverse
-						if (frag1.getFile().equals(frag2.getFile()) 
-								&& frag1.getStartLine() == frag2.getStartLine()
-								&& frag1.getEndLine() == frag2.getEndLine()) {
-							continue;
-						}
-						else {
-							// TODO: this assumes that each clone has only 1 fragment.
-							// Should be fixed in the future to be safer.
-							out += frag1.getFile() + ":" + frag1.getStartLine() + ":" + frag1.getEndLine() + "|";
-							out += frag2.getFile() + ":" + frag2.getStartLine() + ":" + frag2.getEndLine();
-							pair += frag1.getFile() + ":" + frag2.getFile();
-						}
-						// log.debug(out);
-						// add to the fragment hash
-						addToFragmentHash(pair, frag1, frag2, toolIndex);
-//						System.out.println("add to hash (>2) = (" + frag1.getStartLine() + "," 
-//						+ frag1.getEndLine() + ") : (" + frag2.getStartLine() + "," + frag2.getEndLine() + ")");
-//						count++;
-//						System.out.println(printFragmentHash());
-					}
-				}
-			} else {
-				log.error("No clone pair found");
-			}
+			
 		}
 	}
 	
