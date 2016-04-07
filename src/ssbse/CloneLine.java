@@ -14,6 +14,10 @@ public class CloneLine {
 		tools[index] = 1;
 	}
 	
+	public int getTool(int index) {
+		return tools[index];
+	}
+	
 	public String print() {
 		String output = "";
 		for (int i=0; i<tools.length; i++)

@@ -19,9 +19,15 @@ public class CloneFile {
 	public int[] getAgreedLinesByTools() {
 		int[] agreedLines = new int[noOfTools];
 		for (CloneLine cl: cloneLines) {
+			int sum = -1;
 			for (int i=0; i<noOfTools; i++) {
-				
+				sum += cl.getTool(i);
 			}
+			
+			// found agreed clone line at least one
+			if (sum!=-1)
+				// increase the number of line having this agreement
+				agreedLines[sum]++;
 		}
 		return agreedLines;
 	}

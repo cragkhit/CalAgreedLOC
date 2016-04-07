@@ -142,25 +142,23 @@ public class AgreedLOCMain {
 	 */
 	private static int[] calSumAgreedClonedLines(int numTools) {
 		int[] countLoc = new int[numTools];
-//		Iterator it = fragHash.entrySet().iterator();
-//	    while (it.hasNext()) {
-//	        Map.Entry<String, FragmentPairList> pair = (Map.Entry)it.next();
-//	        FragmentPairList fpList = (FragmentPairList) pair.getValue();
-//	        for (int i=0; i<fpList.size(); i++) {
-//	        	FragmentPair fp = fpList.get(i);
-//	        	int agreedLines = fp.getAgreedLines();
-//	        	int maxAgreedTools = fp.getAgreedTools();
-//	        	// fill in the agreed LOC according to #agreedTools
-//	        	for (int j=0; j<maxAgreedTools; j++) {
-//	        		countLoc[j] += agreedLines;
-//	        	}
-//	        }
-//	    }
-	    
 	    ArrayList<CloneFile> clist = cloneFileList.getCloneFileList();
 	    for (CloneFile c : clist) {
-	    		System.out.println(c.getName() + ": " + c.print());
+//	    		System.out.println(c.getName() + ": " + c.print());
+//	    		System.out.println("1 tool: " + c.getAgreedLinesByTools()[0]);
+//	    		System.out.println("2 tools: " + c.getAgreedLinesByTools()[1]);
+//	    		System.out.println("3 tools: " + c.getAgreedLinesByTools()[2]);
+//	    		System.out.println("4 tools: " + c.getAgreedLinesByTools()[3]);
+	    		int[] agreedLinesByTools = c.getAgreedLinesByTools();
+	    		for (int i=0; i<numTools; i++) {
+	    			countLoc[i] += agreedLinesByTools[i];
+	    		}
 	    }
+//
+//		System.out.println("Total 1 tool: " + countLoc[0]);
+//		System.out.println("Total 2 tools: " + countLoc[1]);
+//		System.out.println("Total 3 tools: " + countLoc[2]);
+//		System.out.println("Total 4 tools: " + countLoc[3]);
 	    
 	    return countLoc;
 	}
@@ -348,7 +346,7 @@ public class AgreedLOCMain {
 			else
 				filename = file.getCanonicalPath();
 			
-			System.out.println(count + ", file: " + filename + ", size: " + loc);
+			// System.out.println(count + ", file: " + filename + ", size: " + loc);
 			cloneFileList.addCloneFile(filename, loc);
 			
 		}
@@ -401,7 +399,7 @@ public class AgreedLOCMain {
 			
 			if (line.hasOption("p")) {
 				prefix = line.getOptionValue("p");
-				System.out.println("Prefix = " + prefix);
+				// System.out.println("Prefix = " + prefix);
 			}
 			
 			if (line.hasOption("h")) {

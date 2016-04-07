@@ -1,1676 +1,283 @@
 <CloneClasses>
 <CloneClass>
-    <ID>688</ID>
+    <ID>197</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/exceptions/Reporter.java</File>
-                <Start>193</Start>
-                <End>211</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>70</Start>
+                <End>78</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/exceptions/Reporter.java</File>
-                <Start>211</Start>
-                <End>229</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>831</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/exceptions/Reporter.java</File>
-                <Start>584</Start>
-                <End>595</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/exceptions/Reporter.java</File>
-                <Start>699</Start>
-                <End>710</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>78</Start>
+                <End>87</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>872</ID>
+    <ID>191</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/MockitoAnnotations.java</File>
-                <Start>123</Start>
-                <End>134</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/configuration/DefaultAnnotationEngine.java</File>
-                <Start>66</Start>
-                <End>77</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>3</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/Answers.java</File>
-                <Start>44</Start>
-                <End>104</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/Answers.java</File>
-                <Start>23</Start>
-                <End>39</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>23</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/progress/ArgumentMatcherStorageImpl.java</File>
-                <Start>42</Start>
-                <End>52</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/progress/ArgumentMatcherStorageImpl.java</File>
-                <Start>52</Start>
-                <End>62</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>662</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/handler/InvocationNotifierHandler.java</File>
-                <Start>47</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/handler/InvocationNotifierHandler.java</File>
-                <Start>57</Start>
-                <End>65</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>955</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>506</Start>
-                <End>525</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>599</Start>
-                <End>618</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>630</Start>
-                <End>649</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>661</Start>
-                <End>680</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>692</Start>
-                <End>711</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>723</Start>
-                <End>742</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>754</Start>
-                <End>773</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>537</Start>
-                <End>556</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>568</Start>
-                <End>587</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>957</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>506</Start>
-                <End>568</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java</File>
-                <Start>568</Start>
-                <End>630</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>764</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/EndsWith.java</File>
-                <Start>12</Start>
-                <End>27</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/StartsWith.java</File>
-                <Start>12</Start>
-                <End>28</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/Contains.java</File>
-                <Start>13</Start>
-                <End>29</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>898</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/And.java</File>
-                <Start>34</Start>
-                <End>41</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/matchers/Or.java</File>
-                <Start>34</Start>
-                <End>41</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>971</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/creation/bytebuddy/InterceptedInvocation.java</File>
-                <Start>135</Start>
-                <End>149</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/invocation/InvocationImpl.java</File>
-                <Start>77</Start>
-                <End>92</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>728</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java</File>
-                <Start>94</Start>
-                <End>100</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java</File>
-                <Start>106</Start>
-                <End>112</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>812</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java</File>
-                <Start>188</Start>
-                <End>199</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java</File>
-                <Start>263</Start>
-                <End>274</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>978</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/invocation/SerializableMethod.java</File>
-                <Start>83</Start>
-                <End>90</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stubbing/CloningParameterTest.java</File>
-                <Start>76</Start>
-                <End>83</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>672</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsInOrderChecker.java</File>
-                <Start>32</Start>
-                <End>39</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsChecker.java</File>
-                <Start>26</Start>
-                <End>32</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>733</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsChecker.java</File>
-                <Start>24</Start>
-                <End>32</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java</File>
-                <Start>34</Start>
-                <End>40</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>889</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>89</Start>
-                <End>97</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>99</Start>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>98</Start>
                 <End>107</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>109</Start>
-                <End>119</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>107</Start>
+                <End>116</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>93</Start>
-                <End>101</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>125</Start>
+                <End>134</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>105</Start>
-                <End>113</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>896</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>89</Start>
-                <End>101</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>134</Start>
+                <End>143</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java</File>
-                <Start>105</Start>
-                <End>119</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>116</Start>
+                <End>125</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>796</ID>
+    <ID>113</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/StubberImpl.java</File>
-                <Start>45</Start>
-                <End>54</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/internal/stubbing/StubberImpl.java</File>
-                <Start>57</Start>
-                <End>66</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>136</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/Mockito.java</File>
-                <Start>1930</Start>
-                <End>1992</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/Mockito.java</File>
-                <Start>2110</Start>
-                <End>2299</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>701</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/hamcrest/MockitoHamcrest.java</File>
-                <Start>71</Start>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>160</Start>
                 <End>166</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/Matchers.java</File>
-                <Start>694</Start>
-                <End>789</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>183</Start>
+                <End>188</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>259</Start>
+                <End>265</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>85</ID>
+    <ID>209</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>167</Start>
-                <End>175</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>168</Start>
+                <End>173</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>179</Start>
-                <End>187</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>437</Start>
-                <End>445</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>462</Start>
-                <End>478</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>502</Start>
-                <End>519</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>188</Start>
+                <End>193</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>11</ID>
+    <ID>140</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>413</Start>
-                <End>429</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>478</Start>
-                <End>511</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>102</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>433</Start>
-                <End>445</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/BDDMockito.java</File>
-                <Start>454</Start>
-                <End>478</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>6</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/Matchers.java</File>
-                <Start>616</Start>
-                <End>642</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/Matchers.java</File>
-                <Start>642</Start>
-                <End>681</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>738</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>55</Start>
-                <End>159</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>328</Start>
-                <End>432</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>169</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>107</Start>
-                <End>133</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>211</Start>
-                <End>237</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>302</Start>
-                <End>328</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>393</Start>
-                <End>420</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>120</Start>
-                <End>146</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>198</Start>
-                <End>224</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>289</Start>
-                <End>315</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>380</Start>
-                <End>406</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>992</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>620</Start>
-                <End>650</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>789</Start>
-                <End>819</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>306</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>650</Start>
-                <End>680</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>759</Start>
-                <End>789</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>665</Start>
-                <End>697</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>744</Start>
-                <End>774</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>430</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>650</Start>
-                <End>697</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/main/java/org/mockito/AdditionalMatchers.java</File>
-                <Start>744</Start>
-                <End>789</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>776</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/exceptions/base/MockitoAssertionErrorTest.java</File>
-                <Start>18</Start>
-                <End>28</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/exceptions/base/MockitoExceptionTest.java</File>
-                <Start>18</Start>
-                <End>26</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>721</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/exceptions/base/MockitoSerializationIssueTest.java</File>
-                <Start>20</Start>
-                <End>27</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/exceptions/base/MockitoSerializationIssueTest.java</File>
-                <Start>33</Start>
-                <End>40</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>791</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/exceptions/stacktrace/StackTraceFilterTest.java</File>
-                <Start>19</Start>
-                <End>31</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/exceptions/stacktrace/StackTraceFilterTest.java</File>
-                <Start>44</Start>
-                <End>56</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>727</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/exceptions/stacktrace/StackTraceFilterTest.java</File>
-                <Start>71</Start>
-                <End>85</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/exceptions/stacktrace/StackTraceFilterTest.java</File>
-                <Start>129</Start>
-                <End>147</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>660</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/runners/RunnerFactoryTest.java</File>
-                <Start>27</Start>
-                <End>44</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/runners/RunnerFactoryTest.java</File>
-                <Start>44</Start>
-                <End>61</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>679</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/progress/AtLeastTest.java</File>
-                <Start>12</Start>
-                <End>29</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/progress/TimesTest.java</File>
-                <Start>13</Start>
-                <End>25</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>484</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/injection/SimpleArgumentResolverTest.java</File>
-                <Start>25</Start>
-                <End>30</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/injection/SimpleArgumentResolverTest.java</File>
-                <Start>51</Start>
-                <End>56</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>481</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/injection/SimpleArgumentResolverTest.java</File>
-                <Start>35</Start>
-                <End>42</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/injection/SimpleArgumentResolverTest.java</File>
-                <Start>48</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>280</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/MockInjectionTest.java</File>
-                <Start>61</Start>
-                <End>68</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/MockInjectionTest.java</File>
-                <Start>68</Start>
-                <End>75</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/configuration/MockInjectionTest.java</File>
-                <Start>75</Start>
-                <End>89</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>981</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>37</Start>
-                <End>44</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>69</Start>
-                <End>76</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>549</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>301</Start>
-                <End>308</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>315</Start>
-                <End>322</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>901</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>336</Start>
-                <End>346</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>346</Start>
-                <End>357</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>506</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>402</Start>
-                <End>426</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>438</Start>
-                <End>462</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>815</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>412</Start>
-                <End>424</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>466</Start>
-                <End>478</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>484</Start>
-                <End>496</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>502</Start>
-                <End>514</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>520</Start>
-                <End>532</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>430</Start>
-                <End>442</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>448</Start>
-                <End>460</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>938</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>552</Start>
-                <End>567</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>567</Start>
-                <End>582</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>979</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>554</Start>
-                <End>565</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>628</Start>
-                <End>639</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>643</Start>
-                <End>654</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>569</Start>
-                <End>580</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>27</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>719</Start>
-                <End>725</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>736</Start>
-                <End>742</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>753</Start>
-                <End>759</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>770</Start>
-                <End>776</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>787</Start>
-                <End>793</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>804</Start>
-                <End>810</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>821</Start>
-                <End>827</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>838</Start>
-                <End>844</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>855</Start>
-                <End>861</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>855</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>729</Start>
-                <End>746</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>763</Start>
-                <End>780</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>817</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>733</Start>
-                <End>744</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>784</Start>
-                <End>795</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>801</Start>
-                <End>812</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>818</Start>
-                <End>829</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>835</Start>
-                <End>846</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>750</Start>
-                <End>761</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>767</Start>
-                <End>778</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>915</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>872</Start>
-                <End>891</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/apachecommons/EqualsBuilderTest.java</File>
-                <Start>900</Start>
-                <End>919</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>373</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersPrinterTest.java</File>
-                <Start>21</Start>
-                <End>27</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersPrinterTest.java</File>
-                <Start>27</Start>
-                <End>33</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>940</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/ComparableMatchersTest.java</File>
-                <Start>16</Start>
-                <End>26</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/ComparableMatchersTest.java</File>
-                <Start>26</Start>
-                <End>36</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>799</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersToStringTest.java</File>
-                <Start>39</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersToStringTest.java</File>
-                <Start>61</Start>
-                <End>77</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>596</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersToStringTest.java</File>
-                <Start>77</Start>
-                <End>85</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersToStringTest.java</File>
-                <Start>90</Start>
-                <End>98</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>714</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersToStringTest.java</File>
-                <Start>98</Start>
-                <End>108</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/matchers/MatchersToStringTest.java</File>
-                <Start>113</Start>
-                <End>122</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>742</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/hamcrest/MatcherGenericTypeExtractorTest.java</File>
-                <Start>17</Start>
-                <End>41</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/hamcrest/MatcherGenericTypeExtractorTest.java</File>
-                <Start>58</Start>
-                <End>87</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>743</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/hamcrest/MatcherGenericTypeExtractorTest.java</File>
-                <Start>17</Start>
-                <End>49</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/hamcrest/MatcherGenericTypeExtractorTest.java</File>
-                <Start>49</Start>
-                <End>87</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>842</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/DefaultMockingDetailsTest.java</File>
-                <Start>24</Start>
-                <End>32</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/DefaultMockingDetailsTest.java</File>
-                <Start>32</Start>
-                <End>40</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>271</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
-                <Start>94</Start>
-                <End>102</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
-                <Start>102</Start>
-                <End>110</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
-                <Start>119</Start>
-                <End>127</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>333</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
-                <Start>110</Start>
-                <End>119</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
-                <Start>146</Start>
-                <End>155</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>300</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
+                <File>mockito-master/exceptions/Reporter.java</File>
                 <Start>175</Start>
-                <End>185</End>
+                <End>182</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java</File>
-                <Start>185</Start>
-                <End>197</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>749</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/BeanPropertySetterTest.java</File>
-                <Start>23</Start>
-                <End>32</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/BeanPropertySetterTest.java</File>
-                <Start>55</Start>
-                <End>64</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/BeanPropertySetterTest.java</File>
-                <Start>101</Start>
-                <End>110</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>268</Start>
+                <End>274</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>912</ID>
+    <ID>142</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/ParameterizedConstructorInstantiatorTest.java</File>
-                <Start>73</Start>
-                <End>78</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>195</Start>
+                <End>204</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/ParameterizedConstructorInstantiatorTest.java</File>
-                <Start>111</Start>
-                <End>116</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>922</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/ParameterizedConstructorInstantiatorTest.java</File>
-                <Start>86</Start>
-                <End>94</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/ParameterizedConstructorInstantiatorTest.java</File>
-                <Start>98</Start>
-                <End>106</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>229</Start>
+                <End>239</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>205</ID>
+    <ID>173</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/FieldInitializerTest.java</File>
-                <Start>49</Start>
-                <End>59</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>213</Start>
+                <End>223</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/util/reflection/FieldInitializerTest.java</File>
-                <Start>69</Start>
-                <End>79</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>409</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/SerializableMethodTest.java</File>
-                <Start>38</Start>
-                <End>48</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/SerializableMethodTest.java</File>
-                <Start>48</Start>
-                <End>58</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/SerializableMethodTest.java</File>
-                <Start>53</Start>
-                <End>63</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>239</Start>
+                <End>249</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>470</ID>
+    <ID>202</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>24</Start>
-                <End>37</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>216</Start>
+                <End>221</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>37</Start>
-                <End>50</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>203</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>104</Start>
-                <End>118</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>118</Start>
-                <End>132</End>
+                <File>mockito-master/exceptions/Reporter.java</File>
+                <Start>242</Start>
+                <End>247</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>406</ID>
+    <ID>34</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>134</Start>
-                <End>142</End>
+                <File>mockito-master/exceptions/misusing/UnfinishedVerificationException.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>176</Start>
-                <End>184</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>418</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>146</Start>
-                <End>160</End>
+                <File>mockito-master/exceptions/misusing/UnfinishedStubbingException.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/ArgumentsComparatorTest.java</File>
-                <Start>160</Start>
-                <End>174</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>254</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/InvocationsFinderTest.java</File>
-                <Start>156</Start>
-                <End>165</End>
+                <File>mockito-master/exceptions/misusing/NotAMockException.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/invocation/InvocationsFinderTest.java</File>
-                <Start>165</Start>
-                <End>174</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>569</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/debugging/LoggingListenerTest.java</File>
-                <Start>21</Start>
-                <End>33</End>
+                <File>mockito-master/exceptions/misusing/InvalidUseOfMatchersException.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/debugging/LoggingListenerTest.java</File>
-                <Start>33</Start>
-                <End>45</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>208</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java</File>
-                <Start>57</Start>
-                <End>72</End>
+                <File>mockito-master/exceptions/misusing/MissingMethodInvocationException.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java</File>
-                <Start>72</Start>
-                <End>87</End>
+                <File>mockito-master/exceptions/cause/TooLittleInvocations.java</File>
+                <Start>9</Start>
+                <End>16</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/exceptions/cause/WantedDiffersFromActual.java</File>
+                <Start>9</Start>
+                <End>17</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/exceptions/cause/WantedAnywhereAfterFollowingInteraction.java</File>
+                <Start>9</Start>
+                <End>18</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/exceptions/cause/UndesiredInvocation.java</File>
+                <Start>9</Start>
+                <End>16</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/exceptions/cause/ShouldBeInvokedAfter.java</File>
+                <Start>9</Start>
+                <End>17</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/exceptions/verification/WantedButNotInvoked.java</File>
+                <Start>9</Start>
+                <End>16</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>581</ID>
+    <ID>1</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java</File>
-                <Start>62</Start>
-                <End>69</End>
+                <File>mockito-master/exceptions/verification/NoInteractionsWanted.java</File>
+                <Start>12</Start>
+                <End>19</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java</File>
-                <Start>77</Start>
-                <End>84</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>186</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java</File>
-                <Start>34</Start>
-                <End>41</End>
+                <File>mockito-master/exceptions/verification/TooLittleActualInvocations.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/checkers/MissingInvocationInOrderCheckerTest.java</File>
-                <Start>36</Start>
-                <End>43</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>468</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/SmartPrinterTest.java</File>
-                <Start>31</Start>
-                <End>41</End>
+                <File>mockito-master/exceptions/verification/InvocationDiffersFromActual.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/SmartPrinterTest.java</File>
-                <Start>41</Start>
-                <End>51</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>501</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/SmartPrinterTest.java</File>
-                <Start>51</Start>
-                <End>61</End>
+                <File>mockito-master/exceptions/verification/TooManyActualInvocations.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/verification/SmartPrinterTest.java</File>
-                <Start>61</Start>
-                <End>69</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>287</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/InvocationContainerImplStubbingTest.java</File>
-                <Start>61</Start>
-                <End>78</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/InvocationContainerImplStubbingTest.java</File>
-                <Start>78</Start>
-                <End>95</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>255</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/InvocationContainerImplStubbingTest.java</File>
-                <Start>66</Start>
-                <End>75</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/InvocationContainerImplStubbingTest.java</File>
-                <Start>83</Start>
-                <End>92</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>829</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocksTest.java</File>
-                <Start>42</Start>
-                <End>51</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java</File>
-                <Start>16</Start>
-                <End>25</End>
+                <File>mockito-master/exceptions/verification/NeverWantedButInvoked.java</File>
+                <Start>9</Start>
+                <End>17</End>
             </Fragment>
         </Clone>
 </CloneClass>
@@ -1678,84 +285,343 @@
     <ID>222</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/InvocationContainerImplTest.java</File>
-                <Start>100</Start>
-                <End>109</End>
+                <File>mockito-master/internal/progress/LastArguments.java</File>
+                <Start>48</Start>
+                <End>54</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/internal/stubbing/InvocationContainerImplTest.java</File>
-                <Start>109</Start>
-                <End>116</End>
+                <File>mockito-master/internal/progress/LastArguments.java</File>
+                <Start>79</Start>
+                <End>84</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>386</ID>
+    <ID>255</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/AnnotationsAreCopiedFromMockedTypeTest.java</File>
+                <File>mockito-master/internal/progress/LastArguments.java</File>
+                <Start>25</Start>
+                <End>31</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/progress/ThreadSafeMockingProgress.java</File>
+                <Start>14</Start>
+                <End>19</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>289</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>252</Start>
+                <End>258</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>258</Start>
+                <End>264</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>224</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>352</Start>
+                <End>362</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>544</Start>
+                <End>554</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>575</Start>
+                <End>585</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>606</Start>
+                <End>616</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>637</Start>
+                <End>647</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>668</Start>
+                <End>678</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>699</Start>
+                <End>709</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>730</Start>
+                <End>740</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>761</Start>
+                <End>771</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>792</Start>
+                <End>802</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>124</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>410</Start>
+                <End>425</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>440</Start>
+                <End>455</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>210</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>410</Start>
+                <End>416</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>455</Start>
+                <End>461</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>470</Start>
+                <End>476</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>525</Start>
+                <End>531</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>425</Start>
+                <End>431</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>440</Start>
+                <End>446</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>379</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>491</Start>
+                <End>511</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>511</Start>
+                <End>525</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>313</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>543</Start>
+                <End>562</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>636</Start>
+                <End>655</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>667</Start>
+                <End>686</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>698</Start>
+                <End>717</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>729</Start>
+                <End>748</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>760</Start>
+                <End>779</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>791</Start>
+                <End>810</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>574</Start>
+                <End>593</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>605</Start>
+                <End>624</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>315</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>543</Start>
+                <End>605</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/apachecommons/EqualsBuilder.java</File>
+                <Start>605</Start>
+                <End>667</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>273</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/Equals.java</File>
+                <Start>36</Start>
+                <End>49</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/Same.java</File>
+                <Start>31</Start>
+                <End>38</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>111</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/EndsWith.java</File>
+                <Start>11</Start>
+                <End>26</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/StartsWith.java</File>
+                <Start>11</Start>
+                <End>27</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/Contains.java</File>
+                <Start>11</Start>
+                <End>27</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>304</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/matchers/And.java</File>
                 <Start>32</Start>
-                <End>41</End>
+                <End>42</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/AnnotationsAreCopiedFromMockedTypeTest.java</File>
-                <Start>41</Start>
-                <End>50</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>861</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/AnnotationsAreCopiedFromMockedTypeTest.java</File>
-                <Start>90</Start>
-                <End>99</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockito/AnnotationsAreCopiedFromMockedTypeTest.java</File>
-                <Start>99</Start>
-                <End>110</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>172</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitoutil/ClassLoaders.java</File>
-                <Start>70</Start>
-                <End>105</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitoutil/ClassLoaders.java</File>
-                <Start>127</Start>
-                <End>162</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>777</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitoutil/ClassLoaders.java</File>
-                <Start>275</Start>
-                <End>286</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitoutil/SimplePerRealmReloadingClassLoader.java</File>
-                <Start>43</Start>
-                <End>57</End>
+                <File>mockito-master/internal/matchers/Or.java</File>
+                <Start>32</Start>
+                <End>42</End>
             </Fragment>
         </Clone>
 </CloneClass>
@@ -1763,1138 +629,336 @@
     <ID>199</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/junitrule/MockitoJUnitRuleTest.java</File>
-                <Start>13</Start>
-                <End>41</End>
+                <File>mockito-master/internal/matchers/Or.java</File>
+                <Start>24</Start>
+                <End>30</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/junitrule/RuleTestWithFactoryMethodTest.java</File>
-                <Start>14</Start>
-                <End>44</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/junitrule/RuleTestWithParameterConstructorTest.java</File>
-                <Start>12</Start>
-                <End>42</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>785</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/StackTraceFilteringTest.java</File>
-                <Start>48</Start>
-                <End>59</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/StackTraceFilteringTest.java</File>
-                <Start>59</Start>
-                <End>70</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>598</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>55</Start>
-                <End>63</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>67</Start>
-                <End>75</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>70</Start>
-                <End>78</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>58</Start>
-                <End>66</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>576</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>92</Start>
+                <File>mockito-master/internal/stubbing/Stubber.java</File>
+                <Start>91</Start>
                 <End>98</End>
             </Fragment>
         </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>32</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>104</Start>
-                <End>110</End>
+                <File>mockito-master/internal/verification/MissingInvocationVerifier.java</File>
+                <Start>21</Start>
+                <End>35</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>118</Start>
-                <End>124</End>
+                <File>mockito-master/internal/verification/MissingInvocationInOrderVerifier.java</File>
+                <Start>20</Start>
+                <End>34</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>98</Start>
-                <End>104</End>
+                <File>mockito-master/internal/verification/NumberOfInvocationsInOrderVerifier.java</File>
+                <Start>21</Start>
+                <End>35</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>600</ID>
+    <ID>232</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>55</Start>
-                <End>78</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>58</Start>
-                <End>81</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>641</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java</File>
-                <Start>80</Start>
-                <End>88</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>84</Start>
-                <End>92</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>700</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationTest.java</File>
-                <Start>49</Start>
-                <End>59</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationTest.java</File>
-                <Start>59</Start>
-                <End>67</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>633</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/ClickableStackTracesWhenFrameworkMisusedTest.java</File>
-                <Start>34</Start>
-                <End>45</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/ClickableStackTracesWhenFrameworkMisusedTest.java</File>
-                <Start>50</Start>
-                <End>63</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>646</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/ClickableStackTracesWhenFrameworkMisusedTest.java</File>
-                <Start>63</Start>
-                <End>73</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/misuse/DetectingMisusedMatchersTest.java</File>
-                <Start>50</Start>
-                <End>61</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>677</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>38</Start>
-                <End>46</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java</File>
-                <Start>46</Start>
-                <End>56</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>720</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/junitrunner/JUnit44RunnerTest.java</File>
-                <Start>40</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/junitrunner/JUnit45RunnerTest.java</File>
-                <Start>39</Start>
-                <End>54</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>314</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/bugs/CovariantOverrideTest.java</File>
-                <Start>26</Start>
-                <End>33</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/bugs/CovariantOverrideTest.java</File>
-                <Start>33</Start>
-                <End>40</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>388</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/CompilationWarningsTest.java</File>
-                <Start>23</Start>
-                <End>37</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/CompilationWarningsTest.java</File>
-                <Start>51</Start>
-                <End>65</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>163</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/CompilationWarningsTest.java</File>
-                <Start>32</Start>
-                <End>40</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/CompilationWarningsTest.java</File>
-                <Start>60</Start>
-                <End>68</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>308</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/CompilationWarningsTest.java</File>
-                <Start>35</Start>
-                <End>51</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/CompilationWarningsTest.java</File>
-                <Start>63</Start>
-                <End>78</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>702</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/MethodsImpl.java</File>
-                <Start>104</Start>
-                <End>124</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/MethodsImpl.java</File>
-                <Start>128</Start>
-                <End>148</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/MethodsImpl.java</File>
-                <Start>140</Start>
-                <End>160</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>342</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/NewMatchersTest.java</File>
-                <Start>31</Start>
-                <End>41</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/NewMatchersTest.java</File>
-                <Start>41</Start>
-                <End>51</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>595</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/NewMatchersTest.java</File>
-                <Start>51</Start>
-                <End>61</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/NewMatchersTest.java</File>
-                <Start>61</Start>
-                <End>69</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>602</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/ReflectionMatchersTest.java</File>
-                <Start>53</Start>
-                <End>65</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/ReflectionMatchersTest.java</File>
-                <Start>71</Start>
-                <End>83</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>166</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MoreMatchersTest.java</File>
-                <Start>39</Start>
-                <End>49</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MoreMatchersTest.java</File>
-                <Start>49</Start>
-                <End>59</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MoreMatchersTest.java</File>
-                <Start>69</Start>
-                <End>79</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>793</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>46</Start>
-                <End>60</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>108</Start>
-                <End>122</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>857</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>76</Start>
-                <End>90</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>256</Start>
-                <End>270</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>892</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>115</Start>
-                <End>123</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>263</Start>
-                <End>271</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>537</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>128</Start>
-                <End>141</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>174</Start>
-                <End>187</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>197</Start>
-                <End>210</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>151</Start>
-                <End>164</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>538</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>173</Start>
-                <End>196</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>196</Start>
-                <End>219</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>437</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>349</Start>
-                <End>362</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>362</Start>
-                <End>375</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>388</Start>
-                <End>401</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>439</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>349</Start>
-                <End>375</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>375</Start>
-                <End>401</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>326</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>438</Start>
-                <End>458</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/matchers/MatchersTest.java</File>
-                <Start>458</Start>
-                <End>478</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>552</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/annotation/WrongSetOfAnnotationsTest.java</File>
-                <Start>31</Start>
-                <End>37</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/annotation/WrongSetOfAnnotationsTest.java</File>
-                <Start>37</Start>
-                <End>43</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>216</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/annotation/AnnotationsTest.java</File>
-                <Start>68</Start>
-                <End>83</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/annotation/CaptorAnnotationTest.java</File>
-                <Start>114</Start>
-                <End>123</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>621</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/annotation/SpyAnnotationTest.java</File>
-                <Start>83</Start>
-                <End>98</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/annotation/SpyAnnotationTest.java</File>
-                <Start>98</Start>
-                <End>113</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>156</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/customization/BDDMockitoTest.java</File>
-                <Start>68</Start>
-                <End>78</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/customization/BDDMockitoTest.java</File>
-                <Start>78</Start>
-                <End>89</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>638</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/customization/BDDMockitoTest.java</File>
-                <Start>120</Start>
-                <End>130</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stubbing/StubbingUsingDoReturnTest.java</File>
-                <Start>56</Start>
-                <End>65</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>371</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/debugging/PrintingInvocationsWhenEverythingOkTest.java</File>
-                <Start>14</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/debugging/PrintingInvocationsWhenStubNotUsedTest.java</File>
-                <Start>14</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>396</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenTimesXVerificationFailsTest.java</File>
-                <Start>26</Start>
-                <End>39</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenTimesXVerificationFailsTest.java</File>
+                <File>mockito-master/internal/verification/NumberOfInvocationsVerifier.java</File>
                 <Start>44</Start>
-                <End>57</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>491</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java</File>
-                <Start>33</Start>
-                <End>48</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java</File>
-                <Start>48</Start>
-                <End>63</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>634</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java</File>
-                <Start>35</Start>
-                <End>41</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/AtMostXVerificationTest.java</File>
-                <Start>31</Start>
-                <End>37</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java</File>
-                <Start>50</Start>
-                <End>56</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>574</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java</File>
-                <Start>73</Start>
-                <End>81</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/AtMostXVerificationTest.java</File>
-                <Start>64</Start>
-                <End>72</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>551</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/AtMostXVerificationTest.java</File>
-                <Start>41</Start>
                 <End>52</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/AtLeastXVerificationTest.java</File>
-                <Start>34</Start>
-                <End>45</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>589</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationInOrderWithCallsTest.java</File>
-                <Start>373</Start>
-                <End>391</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationInOrderWithCallsTest.java</File>
-                <Start>407</Start>
-                <End>425</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationInOrderWithCallsTest.java</File>
-                <Start>425</Start>
-                <End>443</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>253</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationInOrderWithCallsTest.java</File>
-                <Start>460</Start>
-                <End>473</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationInOrderWithCallsTest.java</File>
-                <Start>473</Start>
-                <End>486</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>689</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>78</Start>
-                <End>88</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>218</Start>
-                <End>228</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/RelaxedVerificationInOrderTest.java</File>
-                <Start>241</Start>
-                <End>250</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/RelaxedVerificationInOrderTest.java</File>
-                <Start>250</Start>
-                <End>257</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>639</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>112</Start>
-                <End>122</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>122</Start>
-                <End>132</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/RelaxedVerificationInOrderTest.java</File>
-                <Start>201</Start>
-                <End>210</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>614</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>132</Start>
-                <End>145</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>145</Start>
-                <End>160</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>188</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>29</Start>
-                <End>55</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/RelaxedVerificationInOrderTest.java</File>
-                <Start>31</Start>
+                <File>mockito-master/internal/verification/NumberOfInvocationsInOrderVerifier.java</File>
+                <Start>49</Start>
                 <End>57</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>612</ID>
+    <ID>309</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>135</Start>
-                <End>140</End>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>27</Start>
+                <End>35</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java</File>
-                <Start>171</Start>
-                <End>177</End>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>37</Start>
+                <End>45</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/BasicVerificationInOrderTest.java</File>
-                <Start>148</Start>
-                <End>153</End>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>47</Start>
+                <End>58</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>427</ID>
+    <ID>311</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java</File>
-                <Start>50</Start>
-                <End>60</End>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>27</Start>
+                <End>39</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java</File>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>43</Start>
+                <End>58</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>284</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>31</Start>
+                <End>39</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/internal/stubbing/EmptyReturnValues.java</File>
+                <Start>43</Start>
+                <End>51</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>102</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/Matchers.java</File>
+                <Start>261</Start>
+                <End>274</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/Matchers.java</File>
+                <Start>274</Start>
+                <End>287</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>77</Start>
+                <End>90</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>90</Start>
+                <End>103</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
                 <Start>168</Start>
-                <End>178</End>
+                <End>181</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>181</Start>
+                <End>194</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>259</Start>
+                <End>272</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>272</Start>
+                <End>285</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>350</Start>
+                <End>363</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>363</Start>
+                <End>376</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>670</ID>
+    <ID>49</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java</File>
-                <Start>130</Start>
-                <End>140</End>
+                <File>mockito-master/Matchers.java</File>
+                <Start>394</Start>
+                <End>420</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java</File>
-                <Start>150</Start>
-                <End>160</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>606</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenVerificationFailsTest.java</File>
-                <Start>143</Start>
-                <End>150</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenVerificationFailsTest.java</File>
-                <Start>334</Start>
-                <End>341</End>
+                <File>mockito-master/Matchers.java</File>
+                <Start>420</Start>
+                <End>445</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>609</ID>
+    <ID>43</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenVerificationFailsTest.java</File>
-                <Start>174</Start>
-                <End>192</End>
+                <File>mockito-master/Matchers.java</File>
+                <Start>493</Start>
+                <End>505</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenVerificationFailsTest.java</File>
-                <Start>199</Start>
-                <End>219</End>
+                <File>mockito-master/Matchers.java</File>
+                <Start>517</Start>
+                <End>529</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>913</ID>
+    <ID>322</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenVerificationFailsTest.java</File>
-                <Start>404</Start>
-                <End>413</End>
+                <File>mockito-master/Matchers.java</File>
+                <Start>235</Start>
+                <End>248</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesWhenVerificationFailsTest.java</File>
-                <Start>419</Start>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>64</Start>
+                <End>77</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>155</Start>
+                <End>168</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>246</Start>
+                <End>259</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>337</Start>
+                <End>350</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>3</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>51</Start>
+                <End>155</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>324</Start>
                 <End>428</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>649</ID>
+    <ID>100</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/RelaxedVerificationInOrderTest.java</File>
-                <Start>65</Start>
-                <End>76</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>103</Start>
+                <End>129</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/RelaxedVerificationInOrderTest.java</File>
-                <Start>84</Start>
-                <End>94</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>687</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java</File>
-                <Start>140</Start>
-                <End>164</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>207</Start>
+                <End>233</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java</File>
-                <Start>172</Start>
-                <End>198</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>450</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationUsingMatchersTest.java</File>
-                <Start>64</Start>
-                <End>69</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>298</Start>
+                <End>324</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationUsingMatchersTest.java</File>
-                <Start>71</Start>
-                <End>76</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>389</Start>
+                <End>416</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationUsingMatchersTest.java</File>
-                <Start>78</Start>
-                <End>83</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>570</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationWithTimeoutTest.java</File>
-                <Start>69</Start>
-                <End>75</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>116</Start>
+                <End>142</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationWithTimeoutTest.java</File>
-                <Start>134</Start>
-                <End>139</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>659</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationWithTimeoutTest.java</File>
-                <Start>191</Start>
-                <End>206</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>194</Start>
+                <End>220</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/VerificationAfterDelayTest.java</File>
-                <Start>139</Start>
-                <End>155</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>521</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/PrintingVerboseTypesWithArgumentsTest.java</File>
-                <Start>44</Start>
-                <End>61</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>285</Start>
+                <End>311</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/PrintingVerboseTypesWithArgumentsTest.java</File>
-                <Start>78</Start>
-                <End>94</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>806</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/OnlyVerificationTest.java</File>
-                <Start>58</Start>
-                <End>68</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/verification/OnlyVerificationTest.java</File>
-                <Start>68</Start>
-                <End>78</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>626</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/PlaygroundWithDemoOfUnclonedParametersProblemTest.java</File>
-                <Start>38</Start>
-                <End>57</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/PlaygroundWithDemoOfUnclonedParametersProblemTest.java</File>
-                <Start>57</Start>
-                <End>75</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>361</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MocksSerializationTest.java</File>
-                <Start>168</Start>
-                <End>207</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MocksSerializationForAnnotationTest.java</File>
-                <Start>153</Start>
-                <End>192</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>376</Start>
+                <End>402</End>
             </Fragment>
         </Clone>
 </CloneClass>
@@ -2902,183 +966,262 @@
     <ID>211</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MocksSerializationTest.java</File>
-                <Start>180</Start>
-                <End>207</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>458</Start>
+                <End>472</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MocksSerializationForAnnotationTest.java</File>
-                <Start>165</Start>
-                <End>192</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/ObjectsSerializationTest.java</File>
-                <Start>24</Start>
-                <End>45</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>486</Start>
+                <End>500</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>26</ID>
+    <ID>213</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MocksSerializationTest.java</File>
-                <Start>274</Start>
-                <End>303</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>500</Start>
+                <End>514</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MocksSerializationForAnnotationTest.java</File>
-                <Start>253</Start>
-                <End>282</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>657</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MockingMultipleInterfacesTest.java</File>
-                <Start>72</Start>
-                <End>84</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/MockingMultipleInterfacesTest.java</File>
-                <Start>84</Start>
-                <End>97</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>514</Start>
+                <End>528</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>488</ID>
+    <ID>228</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/ReplacingObjectMethodsTest.java</File>
-                <Start>28</Start>
-                <End>41</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>571</Start>
+                <End>586</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/basicapi/ReplacingObjectMethodsTest.java</File>
-                <Start>41</Start>
-                <End>53</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>680</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stubbing/StubbingConsecutiveAnswersTest.java</File>
-                <Start>71</Start>
-                <End>80</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stubbing/StubbingConsecutiveAnswersTest.java</File>
-                <Start>188</Start>
-                <End>200</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>708</Start>
+                <End>725</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>370</ID>
+    <ID>132</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stubbing/BasicStubbingTest.java</File>
-                <Start>29</Start>
-                <End>60</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>586</Start>
+                <End>601</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/src/test/java/org/mockitousage/stubbing/DeprecatedStubbingTest.java</File>
-                <Start>29</Start>
-                <End>60</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>584</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/MockFieldsShouldBeResetBetweenTestMethodsTest.java</File>
-                <Start>30</Start>
-                <End>43</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/MockFieldsShouldBeResetBetweenTestMethodsTest.java</File>
-                <Start>43</Start>
-                <End>56</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>830</Start>
+                <End>845</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>343</ID>
+    <ID>133</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/CaptorAnnotatedFieldShouldBeClearedTest.java</File>
-                <Start>23</Start>
-                <End>32</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>601</Start>
+                <End>616</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/CaptorAnnotatedFieldShouldBeClearedTest.java</File>
-                <Start>32</Start>
-                <End>39</End>
-            </Fragment>
-        </Clone>
-</CloneClass>
-<CloneClass>
-    <ID>170</ID>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/TestWithoutListenerShouldNotInitializeAnnotatedFieldsTest.java</File>
-                <Start>15</Start>
-                <End>31</End>
-            </Fragment>
-        </Clone>
-        <Clone>
-            <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/AnnotatedFieldsShouldBeInitializedByMockitoTestNGListenerTest.java</File>
-                <Start>18</Start>
-                <End>33</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>815</Start>
+                <End>830</End>
             </Fragment>
         </Clone>
 </CloneClass>
 <CloneClass>
-    <ID>267</ID>
+    <ID>135</ID>
         <Clone>
             <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/failuretests/TestNGShouldFailWhenMockitoListenerFailsTest.java</File>
-                <Start>21</Start>
-                <End>31</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>616</Start>
+                <End>631</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/failuretests/TestNGShouldFailWhenMockitoListenerFailsTest.java</File>
-                <Start>31</Start>
-                <End>42</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>631</Start>
+                <End>646</End>
             </Fragment>
         </Clone>
         <Clone>
             <Fragment>
-                <File>mockito-master/subprojects/testng/src/test/java/org/mockitousage/testng/failuretests/TestNGShouldFailWhenMockitoListenerFailsTest.java</File>
-                <Start>42</Start>
-                <End>57</End>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>800</Start>
+                <End>815</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>785</Start>
+                <End>800</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>384</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>616</Start>
+                <End>646</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>785</Start>
+                <End>815</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>103</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>646</Start>
+                <End>661</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>676</Start>
+                <End>693</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>770</Start>
+                <End>785</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>740</Start>
+                <End>755</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>104</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>646</Start>
+                <End>676</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>755</Start>
+                <End>785</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>661</Start>
+                <End>693</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>740</Start>
+                <End>770</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>105</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>646</Start>
+                <End>693</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>740</Start>
+                <End>785</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>129</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>693</Start>
+                <End>708</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>725</Start>
+                <End>740</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>75</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>858</Start>
+                <End>871</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>884</Start>
+                <End>897</End>
+            </Fragment>
+        </Clone>
+</CloneClass>
+<CloneClass>
+    <ID>134</ID>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>897</Start>
+                <End>910</End>
+            </Fragment>
+        </Clone>
+        <Clone>
+            <Fragment>
+                <File>mockito-master/AdditionalMatchers.java</File>
+                <Start>910</Start>
+                <End>923</End>
             </Fragment>
         </Clone>
 </CloneClass>

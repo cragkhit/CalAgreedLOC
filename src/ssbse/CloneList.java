@@ -13,13 +13,15 @@ public class CloneList {
 	public void addCloneFile(String filename, int size) {
 		CloneFile cf = new CloneFile(filename, size, Utilities.NUMBER_OF_TOOLS);
 		cloneFileHash.put(filename, cf);
-		// System.out.println(cf.print());
+		// System.out.println("Adding: " + filename);
+		// System.out.println("Adding: " + cf.print());
 	}
 	
 	public void addCloneLineToList(String filename, int start, int end, int toolIndex) {
 		// get the clone file by name, update the clone line
-		// System.out.print("file: " + filename);
+		// System.out.println("file: " + filename);
 		CloneFile cf = cloneFileHash.get(filename);
+		
 		// System.out.println("size: " + cf.getLocSize() + ", start: " + start + ", end: " + end + ", reported by: " + toolIndex);
 		for (int i=start; i<=end; i++) {
 			cf.addCloneLine(i, toolIndex);
