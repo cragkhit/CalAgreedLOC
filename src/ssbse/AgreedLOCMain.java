@@ -142,6 +142,7 @@ public class AgreedLOCMain {
 	 */
 	private static int[] calSumAgreedClonedLines(int numTools) {
 		int[] countLoc = new int[numTools];
+		int[] toolLoc = new int[numTools];
 	    ArrayList<CloneFile> clist = cloneFileList.getCloneFileList();
 	    for (CloneFile c : clist) {
 //	    		System.out.println(c.getName() + ": " + c.print());
@@ -152,6 +153,7 @@ public class AgreedLOCMain {
 	    		int[] agreedLinesByTools = c.getAgreedLinesByTools();
 	    		for (int i=0; i<numTools; i++) {
 	    			countLoc[i] += agreedLinesByTools[i];
+	    			toolLoc[i] += agreedLinesByTools[i+numTools];
 	    		}
 	    }
 //
@@ -159,6 +161,8 @@ public class AgreedLOCMain {
 //		System.out.println("Total 2 tools: " + countLoc[1]);
 //		System.out.println("Total 3 tools: " + countLoc[2]);
 //		System.out.println("Total 4 tools: " + countLoc[3]);
+	    System.out.println("1tool,ccfx,simian,nicad,deckard");
+	    System.out.println(countLoc[0] + "," + toolLoc[0] +  "," + toolLoc[1] + "," + toolLoc[2] + "," + toolLoc[3]);
 	    
 	    return countLoc;
 	}

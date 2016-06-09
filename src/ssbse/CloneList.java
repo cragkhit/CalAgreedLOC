@@ -20,14 +20,19 @@ public class CloneList {
 	public void addCloneLineToList(String filename, int start, int end, int toolIndex) {
 		// get the clone file by name, update the clone line
 		// System.out.println("file: " + filename);
-		CloneFile cf = cloneFileHash.get(filename);
-		
-		// System.out.println("size: " + cf.getLocSize() + ", start: " + start + ", end: " + end + ", reported by: " + toolIndex);
-		for (int i=start; i<=end; i++) {
-			cf.addCloneLine(i, toolIndex);
-			// System.out.println("adding line: " + i);
+		try {
+			CloneFile cf = cloneFileHash.get(filename);
+
+			// System.out.println("size: " + cf.getLocSize() + ", start: " +
+			// start + ", end: " + end + ", reported by: " + toolIndex);
+			for (int i = start; i <= end; i++) {
+				cf.addCloneLine(i, toolIndex);
+				// System.out.println("adding line: " + i);
+			}
+			// System.out.println(cf.print());
+		} catch (Exception e) {
+			System.out.println("Error: couldn't find a file: " + filename + " reported by the tool " + Utilities.tools[toolIndex] + " in the hash.");
 		}
-		// System.out.println(cf.print());
 	}
 	
 	public ArrayList<CloneFile> getCloneFileList() {

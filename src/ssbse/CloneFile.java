@@ -17,11 +17,24 @@ public class CloneFile {
 	}
 	
 	public int[] getAgreedLinesByTools() {
-		int[] agreedLines = new int[noOfTools];
+		int[] agreedLines = new int[noOfTools*2];
 		for (CloneLine cl: cloneLines) {
 			int sum = -1;
 			for (int i=0; i<noOfTools; i++) {
 				sum += cl.getTool(i);
+			}
+			
+			if (sum == 0) { // have only exactly 1 tool reporting
+				if (cl.getTool(0) == 1)
+					agreedLines[noOfTools]++;
+				else if (cl.getTool(1) == 1)
+					agreedLines[1 + noOfTools]++;
+				else if (cl.getTool(2) == 1)
+					agreedLines[2 + noOfTools]++;
+				else if (cl.getTool(3) == 1)
+					agreedLines[3 + noOfTools]++;
+				else
+					System.out.println("Wrong tool!");
 			}
 			
 			// found agreed clone line at least one
@@ -29,6 +42,9 @@ public class CloneFile {
 				// increase the number of line having this agreement
 				agreedLines[sum]++;
 		}
+		// System.out.println("1tool, 2tools, 3tools, 4tools, ccfx, deckard, nicad, simian");
+		// System.out.println(agreedLines[0] + "," + agreedLines[1] + "," + agreedLines[2] + "," + agreedLines[3] + "," 
+		// 				 + agreedLines[4] + "," + agreedLines[5] + "," + agreedLines[6] + "," + agreedLines[7]);
 		return agreedLines;
 	}
 
